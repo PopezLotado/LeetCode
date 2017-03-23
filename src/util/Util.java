@@ -43,4 +43,16 @@ public class Util {
 		System.out.print(root.val+" ");
 		midTrace(root.right);
 	}
+	/**
+	 * 打印dp
+	 * @param dp
+	 */
+	public static void print(int dp[][]){
+		for(int i=0;i<dp.length;i++){
+			for(int k=0;k<dp[i].length;k++){
+				System.out.print(dp[i][k]+" ");
+			}
+			System.out.println();
+		}
+	}
 }
