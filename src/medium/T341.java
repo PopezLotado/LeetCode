@@ -49,13 +49,13 @@ public class T341 {
  * nested list // Return null if this NestedInteger holds a single integer
  * public List<NestedInteger> getList(); }
  */
-interface NestedInteger {
-	public boolean isInteger();
-
-	public Integer getInteger();
-
-	public List<NestedInteger> getList();
-}
+//interface NestedInteger {
+//	public boolean isInteger();
+//
+//	public Integer getInteger();
+//
+//	public List<NestedInteger> getList();
+//}
 
 class NestedIterator implements Iterator<Integer> {
 
@@ -63,7 +63,7 @@ class NestedIterator implements Iterator<Integer> {
 	int current=0;
 	public NestedIterator(List<NestedInteger> nestedList) {
 		flattened=flatten(nestedList);
-	}
+	} 
 	
 	public List<Integer> flatten(List<NestedInteger> nestedList){
 		List<Integer> res=new LinkedList<Integer>();

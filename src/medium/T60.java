@@ -39,6 +39,8 @@ public class T60 {
 	private String makeup(int k, int[] p, int i, List<Integer> data) {
 		if (i == 0)
 			return "" + data.get(0);
+		//k--  
+		//index=k/p[i];
 		int index = k % p[i] == 0 ? k / p[i] - 1 : k / p[i];
 		int t = data.get(index);
 		data.remove(index);
