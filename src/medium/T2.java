@@ -1,12 +1,15 @@
 package medium;
 
-import util.ListNode;
-
-public class AddTwoNumbers {
+public class T2 {
+       class ListNode {
+		     int val;
+		     ListNode next;
+		     ListNode(int x) { val = x; }
+		  }
        
        public  ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     	   boolean yn=false;
-    	   ListNode h=new ListNode(0);
+    	   ListNode h=this.new ListNode(0);
     	   ListNode t=h;
     	   
     	   while(l1!=null && l2!=null){
@@ -14,7 +17,7 @@ public class AddTwoNumbers {
     		   s+=yn?1:0;
         	   yn=s>9?true:false;
         	   int r=yn?s-10:s;
-        	   ListNode l=new ListNode(r);
+        	   ListNode l=this.new ListNode(r);
         	   t.next=l;
         	   t=l;
         	   l1=l1.next;
@@ -26,7 +29,7 @@ public class AddTwoNumbers {
         		   s+=yn?1:0;
             	   yn=s>9?true:false;
             	   int r=yn?s-10:s;
-            	   ListNode l=new ListNode(r);
+            	   ListNode l=this.new ListNode(r);
             	   t.next=l;
             	   t=l;
             	   l2=l2.next;
@@ -37,14 +40,14 @@ public class AddTwoNumbers {
         		   s+=yn?1:0;
             	   yn=s>9?true:false;
             	   int r=yn?s-10:s;
-            	   ListNode l=new ListNode(r);
+            	   ListNode l=this.new ListNode(r);
             	   t.next=l;
             	   t=l;
             	   l1=l1.next;
     		   }
 		}
     	   if(yn){
-    		   ListNode l=new ListNode(1);
+    		   ListNode l=this.new ListNode(1);
         	   t.next=l;
         	   t=l;
     	   }
